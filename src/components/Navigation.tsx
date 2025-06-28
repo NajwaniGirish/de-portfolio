@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Database } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +17,8 @@ const Navigation = () => {
   const navItems = [
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
+    { label: 'Education', href: '#education' },
+    { label: 'Certifications', href: '#certifications' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
     { label: 'Contact', href: '#contact' },
@@ -41,12 +43,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={scrollToTop}
-            className={`flex items-center space-x-2 font-bold text-xl transition-colors ${
+            className={`font-bold text-xl transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}
           >
-            <Database className="w-8 h-8 text-blue-600" />
-            <span>Girish Najwani</span>
+            Girish Najwani
           </button>
 
           {/* Desktop Navigation */}

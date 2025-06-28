@@ -30,8 +30,9 @@ const Hero = () => {
             
             <div className="mb-6">
               <p className="text-lg text-gray-300 mb-2">Hi all, I'm</p>
-              <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">
-                Girish Najwani 👋
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
+                <span>Girish Najwani</span>
+                <span className="text-6xl animate-[wave_1s_ease-in-out_infinite]">👋</span>
               </h1>
             </div>
             
