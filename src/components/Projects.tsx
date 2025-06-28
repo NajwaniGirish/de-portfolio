@@ -1,31 +1,20 @@
 
-import { ExternalLink, Github, Database, TrendingUp, Code2 } from 'lucide-react';
+import { ExternalLink, Github, Code2, TrendingUp } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Data Quality Framework",
-      description: "Developed a comprehensive data quality framework for a Fortune 500 pharmaceutical company, standardizing and validating data across multiple pipelines.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop",
-      technologies: ["PySpark", "Data Validation", "Data Standardization", "Fortune 500"],
-      github: "#",
-      live: "#",
-      icon: Database
-    },
-    {
       title: "State Guess Quiz Game",
-      description: "Developed a State Guessing Game using Python and Tkinter, where users identify states based on a displayed map with real-time score updates.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      technologies: ["Python", "Tkinter", "GUI Development", "Interactive Learning"],
+      description: "Developed using Python and Tkinter with real-time score updates and interactive learning.",
+      technologies: ["Python", "Tkinter", "GUI Development"],
       github: "#",
       live: "#",
       icon: Code2
     },
     {
       title: "Kaggle Case Studies Portfolio",
-      description: "Worked on 10+ case studies on Kaggle covering diverse industries, involving EDA, univariate and bivariate analysis, and hypothesis testing for data-driven insights.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop",
-      technologies: ["Python", "Pandas", "Matplotlib", "EDA", "Statistical Analysis"],
+      description: "10+ case studies covering EDA, statistical analysis, and hypothesis testing across diverse industries.",
+      technologies: ["Python", "Pandas", "Matplotlib", "Statistical Analysis"],
       github: "#",
       live: "#",
       icon: TrendingUp
@@ -33,51 +22,43 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-16 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professional projects and personal coursework demonstrating data engineering expertise
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-4"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Personal projects and coursework demonstrating technical skills
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-gray-100"
+              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute top-4 right-4">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2">
+              <div className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="bg-blue-50 p-2 rounded-lg">
                     <project.icon className="w-5 h-5 text-blue-600" />
                   </div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {project.title}
+                  </h3>
                 </div>
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
-                  {project.title}
-                </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                      className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs font-medium"
                     >
                       {tech}
                     </span>
@@ -87,17 +68,17 @@ const Projects = () => {
                 <div className="flex space-x-4">
                   <a
                     href={project.github}
-                    className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors"
+                    className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors text-sm"
                   >
-                    <Github size={18} />
-                    <span className="text-sm font-medium">Code</span>
+                    <Github size={16} />
+                    <span>Code</span>
                   </a>
                   <a
                     href={project.live}
-                    className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
+                    className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors text-sm"
                   >
-                    <ExternalLink size={18} />
-                    <span className="text-sm font-medium">Details</span>
+                    <ExternalLink size={16} />
+                    <span>Details</span>
                   </a>
                 </div>
               </div>

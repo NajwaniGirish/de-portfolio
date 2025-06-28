@@ -1,5 +1,5 @@
 
-import { User, MapPin, Mail, Calendar, Award, GraduationCap } from 'lucide-react';
+import { User, MapPin, Mail, Calendar } from 'lucide-react';
 
 const About = () => {
   return (
@@ -15,38 +15,16 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Hi, I'm Girish Najwani - Certified Data Engineer with proven expertise
+              Hi, I'm Girish Najwani
             </h3>
             
             <p className="text-gray-600 leading-relaxed">
-              I'm a Certified Data Engineer with 4 years of experience building and optimizing 
+              Certified Data Engineer with 4 years of experience building and optimizing 
               scalable data pipelines using PySpark, Spark SQL, and distributed computing. 
-              Skilled in ETL development, Spark performance tuning, and cloud platforms like AWS and Azure.
+              Skilled in ETL development, Spark performance tuning, and cloud platforms like AWS and 
+              Azure. Proven track record of delivering high-quality, production-ready data solutions 
+              in cross-functional environments.
             </p>
-            
-            <p className="text-gray-600 leading-relaxed">
-              I have a proven track record of delivering high-quality, production-ready data solutions 
-              in cross-functional environments. Currently working at ZS Associates, where I've optimized 
-              processes reducing runtime by 70% and managed teams to deliver impactful data engineering projects.
-            </p>
-
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <div className="flex items-center space-x-3 mb-4">
-                <Award className="w-6 h-6 text-blue-600" />
-                <h4 className="text-lg font-semibold text-gray-800">Certifications</h4>
-              </div>
-              <p className="text-gray-700">Databricks Certified Data Engineer Associate</p>
-            </div>
-
-            <div className="bg-green-50 p-6 rounded-lg">
-              <div className="flex items-center space-x-3 mb-4">
-                <GraduationCap className="w-6 h-6 text-green-600" />
-                <h4 className="text-lg font-semibold text-gray-800">Education</h4>
-              </div>
-              <p className="text-gray-700 font-medium">B.Tech in Information Technology</p>
-              <p className="text-gray-600">Northern India Engineering College, GGSIPU University Delhi</p>
-              <p className="text-gray-600">CGPA: 8.51/10 (2018-2021)</p>
-            </div>
 
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="flex items-center space-x-3">
@@ -75,10 +53,6 @@ const About = () => {
                 alt="Data Engineer at work"
                 className="w-full h-64 object-cover rounded-xl shadow-lg"
               />
-              <div className="mt-6 text-center">
-                <h4 className="text-xl font-semibold text-gray-800">Ready to collaborate</h4>
-                <p className="text-gray-600 mt-2">Let's build scalable data solutions together</p>
-              </div>
             </div>
           </div>
         </div>
