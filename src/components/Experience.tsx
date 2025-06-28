@@ -4,53 +4,47 @@ import { Building, Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Data Engineer",
-      company: "TechCorp Analytics",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Data Engineer (BTS Associate Consultant)",
+      company: "ZS Associates",
+      location: "Pune, India",
+      period: "June 2024 - Present",
       description: [
-        "Lead the design and implementation of data pipelines processing 10TB+ daily",
-        "Migrated legacy ETL processes to cloud-native solutions, reducing processing time by 70%",
-        "Mentored junior engineers and established data engineering best practices"
+        "Optimized existing processes, reducing run time by 70% and overall resource consumption, leading to cost-effective operations",
+        "Scaled existing pipelines to handle increased data volume and finer granularity without impacting overall runtime, ensuring consistent SLAs and system performance",
+        "Played a key role in requirements gathering with clients and onshore teams",
+        "Established pipelines on Azure DevOps for streamlined code deployment",
+        "Managed and mentored a 3-member team, ensuring timely delivery and issue resolution",
+        "Independently executed 2 short-term projects from requirements to production within 1 week"
       ],
-      technologies: ["Apache Spark", "AWS", "Python", "Kubernetes", "Terraform"]
+      technologies: ["PySpark", "Azure DevOps", "Data Pipelines", "Team Leadership", "Client Management"]
     },
     {
-      title: "Data Engineer",
-      company: "DataFlow Solutions",
-      location: "Austin, TX",
-      period: "2020 - 2022",
+      title: "Business Technology Associate",
+      company: "ZS Associates",
+      location: "Pune, India",
+      period: "June 2021 - May 2024",
       description: [
-        "Built real-time streaming data pipelines using Apache Kafka and Spark Streaming",
-        "Developed automated data quality monitoring systems reducing data issues by 85%",
-        "Collaborated with data scientists to optimize ML model training pipelines"
+        "Contributed to a renowned Fortune 500 pharmaceutical company in the USA",
+        "Developed a comprehensive data quality framework aimed at standardizing and validating data",
+        "Revamped existing processes, transitioning from SparkSQL to the PySpark ecosystem",
+        "Established strong client relationships with a client portfolio exceeding 50 million and consistently met data delivery expectations",
+        "Delivered a high-impact project that led to the client receiving a top internal award, driven by the project's significant business value and data innovation",
+        "Led a 2-member team, offering technical guidance and resolving data engineering challenges"
       ],
-      technologies: ["Kafka", "Spark", "Python", "Docker", "Airflow"]
-    },
-    {
-      title: "Junior Data Analyst",
-      company: "StartupData Inc",
-      location: "Remote",
-      period: "2019 - 2020",
-      description: [
-        "Created ETL processes for customer data integration from multiple sources",
-        "Built interactive dashboards for business stakeholders using Tableau",
-        "Performed data analysis to identify customer behavior patterns"
-      ],
-      technologies: ["SQL", "Python", "Tableau", "PostgreSQL", "Git"]
+      technologies: ["PySpark", "SparkSQL", "Data Quality Framework", "Fortune 500 Client", "Team Leadership"]
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Experience
+            Professional Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A journey of growth in data engineering and analytics
+            A journey of growth in data engineering at ZS Associates
           </p>
         </div>
 

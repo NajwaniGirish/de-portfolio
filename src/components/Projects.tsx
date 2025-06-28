@@ -1,39 +1,39 @@
 
-import { ExternalLink, Github, Database, TrendingUp, Cloud } from 'lucide-react';
+import { ExternalLink, Github, Database, TrendingUp, Code2 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Real-time Analytics Pipeline",
-      description: "Built a scalable real-time data pipeline processing 1M+ events per second using Apache Kafka, Spark Streaming, and AWS services.",
+      title: "Data Quality Framework",
+      description: "Developed a comprehensive data quality framework for a Fortune 500 pharmaceutical company, standardizing and validating data across multiple pipelines.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop",
-      technologies: ["Apache Kafka", "Spark", "AWS", "Python", "Docker"],
+      technologies: ["PySpark", "Data Validation", "Data Standardization", "Fortune 500"],
       github: "#",
       live: "#",
       icon: Database
     },
     {
-      title: "Customer Analytics Dashboard",
-      description: "Developed an interactive dashboard providing real-time customer insights, increasing business decision speed by 60%.",
+      title: "State Guess Quiz Game",
+      description: "Developed a State Guessing Game using Python and Tkinter, where users identify states based on a displayed map with real-time score updates.",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop",
-      technologies: ["Tableau", "PostgreSQL", "Python", "REST API"],
+      technologies: ["Python", "Tkinter", "GUI Development", "Interactive Learning"],
+      github: "#",
+      live: "#",
+      icon: Code2
+    },
+    {
+      title: "Kaggle Case Studies Portfolio",
+      description: "Worked on 10+ case studies on Kaggle covering diverse industries, involving EDA, univariate and bivariate analysis, and hypothesis testing for data-driven insights.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop",
+      technologies: ["Python", "Pandas", "Matplotlib", "EDA", "Statistical Analysis"],
       github: "#",
       live: "#",
       icon: TrendingUp
-    },
-    {
-      title: "ML Feature Store",
-      description: "Implemented a centralized feature store for ML models, reducing feature development time by 40% across data science teams.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop",
-      technologies: ["MLflow", "Apache Airflow", "Snowflake", "Python"],
-      github: "#",
-      live: "#",
-      icon: Cloud
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -41,7 +41,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A showcase of data engineering solutions that drive business value
+            Professional projects and personal coursework demonstrating data engineering expertise
           </p>
         </div>
 
@@ -97,7 +97,7 @@ const Projects = () => {
                     className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors"
                   >
                     <ExternalLink size={18} />
-                    <span className="text-sm font-medium">Live Demo</span>
+                    <span className="text-sm font-medium">Details</span>
                   </a>
                 </div>
               </div>

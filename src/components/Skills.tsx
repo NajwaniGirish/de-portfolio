@@ -4,45 +4,45 @@ import { Database, Cloud, Code, BarChart3, Settings, Brain } from 'lucide-react'
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Data Processing",
-      icon: Database,
-      skills: ["Apache Spark", "Kafka", "Airflow", "Pandas", "PySpark"],
+      title: "Programming Languages",
+      icon: Code,
+      skills: ["PySpark", "Python (Pandas, NumPy, Matplotlib)", "SQL", "Spark-SQL", "Hive"],
       color: "from-blue-500 to-blue-600"
     },
     {
-      title: "Cloud Platforms",
-      icon: Cloud,
-      skills: ["AWS", "Google Cloud", "Azure", "Snowflake", "Databricks"],
+      title: "Big Data & Tools",
+      icon: Database,
+      skills: ["Apache Spark", "Databricks", "Airflow", "AWS EMR", "Viva Nitro"],
       color: "from-teal-500 to-teal-600"
     },
     {
-      title: "Programming",
-      icon: Code,
-      skills: ["Python", "SQL", "Scala", "Java", "R"],
+      title: "Cloud & DevOps",
+      icon: Cloud,
+      skills: ["AWS S3", "Azure DevOps", "ETL Development", "Spark Performance Tuning"],
       color: "from-purple-500 to-purple-600"
     },
     {
-      title: "Analytics",
+      title: "Analytics & Visualization",
       icon: BarChart3,
-      skills: ["Tableau", "Power BI", "Looker", "Jupyter", "MLflow"],
+      skills: ["Data Quality Framework", "EDA", "Univariate Analysis", "Bivariate Analysis", "Hypothesis Testing"],
       color: "from-green-500 to-green-600"
     },
     {
-      title: "Infrastructure",
+      title: "Other Tools",
       icon: Settings,
-      skills: ["Docker", "Kubernetes", "Terraform", "Jenkins", "Git"],
+      skills: ["Excel (Advanced)", "JIRA", "Distributed Computing", "Pipeline Optimization"],
       color: "from-orange-500 to-orange-600"
     },
     {
-      title: "Machine Learning",
+      title: "Data Engineering",
       icon: Brain,
-      skills: ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "AutoML"],
+      skills: ["Data Pipelines", "Data Validation", "Data Standardization", "Production Deployment", "Team Leadership"],
       color: "from-pink-500 to-pink-600"
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

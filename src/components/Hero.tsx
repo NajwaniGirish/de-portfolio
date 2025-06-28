@@ -24,12 +24,12 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">
-            Data Engineer
+            Certified Data Engineer
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Transforming raw data into actionable insights through scalable pipelines, 
-            advanced analytics, and cloud-native solutions
+            4 years of experience building and optimizing scalable data pipelines using PySpark, 
+            Spark SQL, and distributed computing on AWS and Azure platforms
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
