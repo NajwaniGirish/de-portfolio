@@ -24,8 +24,12 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">
-            Certified Data Engineer
+            Girish Najwani
           </h1>
+          
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-gray-200">
+            Certified Data Engineer
+          </h2>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto leading-relaxed">
             4 years of experience building and optimizing scalable data pipelines using PySpark, 

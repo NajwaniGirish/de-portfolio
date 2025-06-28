@@ -15,7 +15,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Certified Data Engineer with proven expertise
+              Hi, I'm Girish Najwani - Certified Data Engineer with proven expertise
             </h3>
             
             <p className="text-gray-600 leading-relaxed">

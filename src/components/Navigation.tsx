@@ -46,7 +46,7 @@ const Navigation = () => {
             }`}
           >
             <Database className="w-8 h-8 text-blue-600" />
-            <span>DataEng</span>
+            <span>Girish Najwani</span>
           </button>
 
           {/* Desktop Navigation */}
