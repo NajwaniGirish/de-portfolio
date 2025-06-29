@@ -27,7 +27,7 @@ const Experience = () => {
         "Developed a comprehensive data quality framework aimed at standardizing and validating data",
         "Revamped existing processes, transitioning from SparkSQL to the PySpark ecosystem",
         "Established strong client relationships with a client portfolio exceeding 50 million and consistently met data delivery expectations",
-        "Delivered a high-impact project that led to the client receiving a top internal award, driven by the project's significant business value and data innovation",
+        "Delivered a high-impact project that led to the client receiving a prestigious internal award, driven by the project's significant business value and data innovation",
         "Led a 2-member team, offering technical guidance and resolving data engineering challenges"
       ]
     }
@@ -79,7 +79,7 @@ const Experience = () => {
                   <ul className="space-y-2 mb-4">
                     {experience.description.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-600 dark:text-gray-300 leading-relaxed flex items-start">
-                        <span className="text-blue-600 mr-2 flex-shrink-0 mt-2 text-xs">•</span>
+                        <span className="text-blue-600 mr-3 flex-shrink-0 text-lg font-bold leading-6">•</span>
                         <span className="leading-6">{item}</span>
                       </li>
                     ))}

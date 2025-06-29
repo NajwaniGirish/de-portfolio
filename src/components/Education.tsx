@@ -4,17 +4,17 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 const Education = () => {
   const educationData = [
     {
-      degree: "Bachelor of Engineering in Computer Science",
-      institution: "Pune University",
-      location: "Pune, India",
-      period: "2017 - 2021",
-      grade: "CGPA: 8.5/10",
-      description: "Specialized in Data Structures, Algorithms, Database Management Systems, and Software Engineering principles."
+      degree: "B.Tech in Information Technology",
+      institution: "Northern India Engineering College GGSIPU University",
+      location: "Delhi, India",
+      period: "June 2018 - Jun 2021",
+      grade: "CGPA: 8.51/10",
+      description: "Specialized in Information Technology with focus on programming, data structures, algorithms, and software development principles."
     }
   ];
 
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-slate-800">
+    <section id="education" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -25,7 +25,7 @@ const Education = () => {
 
         <div className="max-w-4xl mx-auto">
           {educationData.map((edu, index) => (
-            <div key={index} className="bg-white dark:bg-slate-700 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div key={index} className="bg-gray-50 dark:bg-slate-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-start space-x-4">
                 <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-3 rounded-lg text-white flex-shrink-0">
                   <GraduationCap className="w-6 h-6" />

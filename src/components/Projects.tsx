@@ -1,31 +1,15 @@
 
-import { ExternalLink, Github, Database, Cloud, BarChart3 } from 'lucide-react';
+import { ExternalLink, Github, Database, BarChart3 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Real-time Data Pipeline for Pharmaceutical Analytics",
-      description: "Built a scalable data pipeline processing multi-terabyte pharmaceutical data using PySpark and Azure cloud services. Implemented real-time data ingestion, transformation, and analytics for drug discovery insights.",
-      technologies: ["PySpark", "Azure Data Factory", "Databricks", "Azure Synapse", "Delta Lake"],
-      icon: <Database className="w-6 h-6" />,
-      gradient: "from-blue-500 to-blue-600",
-      metrics: ["70% reduction in processing time", "Multi-TB data processing", "Real-time analytics"]
-    },
-    {
-      title: "ETL Optimization Framework",
-      description: "Developed a comprehensive ETL framework that reduced data processing time by 70% and improved resource utilization. Implemented automated data quality checks and monitoring systems.",
-      technologies: ["Python", "Apache Airflow", "Spark SQL", "Azure DevOps", "Monitoring"],
+      title: "Kaggle Case Studies",
+      description: "Worked on 10+ case studies on Kaggle, covering diverse industries. The projects involved Exploratory Data Analysis (EDA), univariate and bivariate analysis, and hypothesis testing to extract meaningful insights and drive data-driven decision-making.",
+      technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "EDA", "Statistical Analysis"],
       icon: <BarChart3 className="w-6 h-6" />,
-      gradient: "from-green-500 to-green-600",
-      metrics: ["70% performance improvement", "Automated quality checks", "Resource optimization"]
-    },
-    {
-      title: "Cloud Data Lake Architecture",
-      description: "Designed and implemented a modern data lake architecture on Azure cloud platform, enabling efficient storage and processing of structured and unstructured data for Fortune 500 clients.",
-      technologies: ["Azure Data Lake", "Azure Synapse", "Power BI", "Azure Security", "Data Governance"],
-      icon: <Cloud className="w-6 h-6" />,
-      gradient: "from-purple-500 to-purple-600",
-      metrics: ["Fortune 500 client", "Petabyte-scale storage", "Enhanced security"]
+      gradient: "from-blue-500 to-blue-600",
+      metrics: ["10+ case studies completed", "Multiple industry domains", "Statistical analysis expertise"]
     }
   ];
 
@@ -34,15 +18,15 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Featured Projects
+            Personal Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Showcase of impactful data engineering projects delivering scalable solutions
+            Showcase of data analysis and engineering projects demonstrating practical skills
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
@@ -83,7 +67,7 @@ const Projects = () => {
               <div className="flex space-x-3">
                 <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
                   <ExternalLink size={16} />
-                  <span className="text-sm">View Details</span>
+                  <span className="text-sm">View on Kaggle</span>
                 </button>
                 <button className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
                   <Github size={16} />

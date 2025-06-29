@@ -4,20 +4,12 @@ import { Award, Calendar, ExternalLink } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: "Microsoft Certified: Azure Data Engineer Associate",
-      issuer: "Microsoft",
-      date: "2023",
-      credentialId: "ABC123XYZ",
-      description: "Expertise in designing and implementing data solutions on Microsoft Azure platform, including data storage, data processing, and data security.",
-      skills: ["Azure Data Factory", "Azure Synapse Analytics", "Azure Databricks", "Data Lake Storage"]
-    },
-    {
-      title: "Databricks Certified Associate Developer for Apache Spark",
+      title: "Databricks Certified Data Engineer Associate",
       issuer: "Databricks",
-      date: "2022",
-      credentialId: "DBX456DEF",
-      description: "Proficiency in Apache Spark development, including DataFrame API, Spark SQL, and performance optimization techniques.",
-      skills: ["Apache Spark", "PySpark", "Spark SQL", "Performance Tuning"]
+      date: "2024",
+      credentialId: "DBX123ABC",
+      description: "Certified in designing and implementing data engineering solutions using Databricks platform, including Apache Spark, Delta Lake, and data pipeline optimization.",
+      skills: ["Apache Spark", "Databricks", "Delta Lake", "Data Engineering"]
     }
   ];
 

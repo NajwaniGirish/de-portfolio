@@ -4,40 +4,28 @@ import { Database, Code, Cloud, GitBranch, Server, BarChart3 } from 'lucide-reac
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Languages",
       icon: <Code className="w-6 h-6" />,
-      skills: ["Python", "SQL", "Scala", "Java", "Shell Scripting"],
+      skills: ["PySpark", "Python (Pandas, NumPy, Matplotlib)", "SQL", "Spark-SQL", "Hive"],
       color: "from-blue-500 to-blue-600"
     },
     {
-      title: "Big Data & Analytics",
+      title: "Big Data & Tools",
       icon: <Database className="w-6 h-6" />,
-      skills: ["Apache Spark", "PySpark", "Spark SQL", "Hadoop", "Hive", "Apache Kafka"],
+      skills: ["Apache Spark", "Databricks", "Airflow", "AWS EMR", "Viva Nitro"],
       color: "from-green-500 to-green-600"
     },
     {
-      title: "Cloud Platforms",
+      title: "Cloud & DevOps",
       icon: <Cloud className="w-6 h-6" />,
-      skills: ["Microsoft Azure", "AWS", "Databricks", "Azure Data Factory", "Azure Synapse"],
+      skills: ["AWS S3", "Azure DevOps"],
       color: "from-purple-500 to-purple-600"
     },
     {
-      title: "Data Engineering Tools",
+      title: "Other Tools",
       icon: <Server className="w-6 h-6" />,
-      skills: ["Apache Airflow", "DBT", "Snowflake", "Delta Lake", "Azure DevOps"],
+      skills: ["Excel (Advanced)", "JIRA"],
       color: "from-orange-500 to-orange-600"
-    },
-    {
-      title: "Databases",
-      icon: <BarChart3 className="w-6 h-6" />,
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Cosmos DB"],
-      color: "from-teal-500 to-teal-600"
-    },
-    {
-      title: "DevOps & Version Control",
-      icon: <GitBranch className="w-6 h-6" />,
-      skills: ["Git", "Docker", "Kubernetes", "Jenkins", "CI/CD Pipelines"],
-      color: "from-red-500 to-red-600"
     }
   ];
 
@@ -51,7 +39,7 @@ const Skills = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
