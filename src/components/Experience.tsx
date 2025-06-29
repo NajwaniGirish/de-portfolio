@@ -15,8 +15,7 @@ const Experience = () => {
         "Established pipelines on Azure DevOps for streamlined code deployment",
         "Managed and mentored a 3-member team, ensuring timely delivery and issue resolution",
         "Independently executed 2 short-term projects from requirements to production within 1 week"
-      ],
-      technologies: ["PySpark", "Azure DevOps", "Data Pipelines", "Team Leadership", "Client Management"]
+      ]
     },
     {
       title: "Data Engineer",
@@ -30,8 +29,7 @@ const Experience = () => {
         "Established strong client relationships with a client portfolio exceeding 50 million and consistently met data delivery expectations",
         "Delivered a high-impact project that led to the client receiving a top internal award, driven by the project's significant business value and data innovation",
         "Led a 2-member team, offering technical guidance and resolving data engineering challenges"
-      ],
-      technologies: ["PySpark", "SparkSQL", "Data Quality Framework", "Fortune 500 Client", "Team Leadership"]
+      ]
     }
   ];
 
@@ -81,22 +79,11 @@ const Experience = () => {
                   <ul className="space-y-2 mb-4">
                     {experience.description.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-600 dark:text-gray-300 leading-relaxed flex items-start">
-                        <span className="text-blue-600 mr-2 flex-shrink-0 mt-1.5 text-xs">•</span>
+                        <span className="text-blue-600 mr-2 flex-shrink-0 mt-2 text-xs">•</span>
                         <span className="leading-6">{item}</span>
                       </li>
                     ))}
                   </ul>
-
-                  <div className="flex flex-wrap gap-2">
-                    {experience.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             ))}

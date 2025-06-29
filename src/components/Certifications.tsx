@@ -22,7 +22,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 bg-white dark:bg-slate-900">
+    <section id="certifications" className="py-20 bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -33,7 +33,7 @@ const Certifications = () => {
 
         <div className="max-w-4xl mx-auto grid gap-8">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-50 dark:bg-slate-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div key={index} className="bg-white dark:bg-slate-700 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-start space-x-4">
                 <div className="bg-gradient-to-r from-blue-600 to-teal-600 p-3 rounded-lg text-white flex-shrink-0">
                   <Award className="w-6 h-6" />

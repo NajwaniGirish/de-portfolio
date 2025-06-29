@@ -12,11 +12,11 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen lg:min-h-screen md:min-h-[80vh] sm:min-h-[70vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 text-white flex items-center justify-center relative overflow-hidden">
-      {/* Background decoration with lower z-index */}
-      <div className="absolute inset-0 opacity-3 z-0">
-        <div className="absolute top-20 left-20 w-32 h-32 md:w-64 md:h-64 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 md:w-80 md:h-80 bg-teal-500 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-96 md:h-96 bg-purple-500 rounded-full blur-3xl"></div>
+      {/* Subtle background decoration with very low opacity */}
+      <div className="absolute inset-0 opacity-5 z-0">
+        <div className="absolute top-20 left-20 w-16 h-16 md:w-32 md:h-32 bg-blue-500 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-20 w-20 h-20 md:w-40 md:h-40 bg-teal-500 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-48 md:h-48 bg-purple-500 rounded-full blur-2xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             
             <div className="mb-6">
-              <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-2">Hi all, I'm</p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-2">Hi all, I'm</p>
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
                 <span>Girish Najwani</span>
                 <span className="text-4xl md:text-6xl animate-[wave_1s_ease-in-out_infinite]">👋</span>
