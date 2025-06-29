@@ -12,8 +12,8 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen lg:min-h-screen md:min-h-[80vh] sm:min-h-[70vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white flex items-center justify-center relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
+      {/* Background decoration with lower z-index */}
+      <div className="absolute inset-0 opacity-5 z-0">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-64 md:h-64 bg-blue-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 md:w-80 md:h-80 bg-teal-500 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-96 md:h-96 bg-purple-500 rounded-full blur-3xl"></div>
@@ -22,14 +22,14 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="text-center lg:text-left animate-fade-in">
-            <div className="flex justify-center lg:justify-start space-x-4 mb-6 md:mb-8">
+            <div className="flex justify-center lg:justify-start space-x-4 mb-6 md:mb-8 opacity-20">
               <Database className="w-8 h-8 md:w-12 md:h-12 text-blue-400 animate-pulse" />
               <BarChart3 className="w-8 h-8 md:w-12 md:h-12 text-teal-400 animate-pulse" />
               <Code2 className="w-8 h-8 md:w-12 md:h-12 text-purple-400 animate-pulse" />
             </div>
             
             <div className="mb-6">
-              <p className="text-xl md:text-2xl text-gray-300 mb-2">Hi all, I'm</p>
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-2">Hi all, I'm</p>
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
                 <span>Girish Najwani</span>
                 <span className="text-4xl md:text-6xl animate-[wave_1s_ease-in-out_infinite]">👋</span>
@@ -103,7 +103,7 @@ const Hero = () => {
 
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-blue-400 transition-colors"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:text-blue-400 transition-colors z-10"
       >
         <ChevronDown size={32} />
       </button>

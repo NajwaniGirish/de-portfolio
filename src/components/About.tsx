@@ -1,9 +1,9 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-16 md:py-20 bg-white">
+    <section id="about" className="py-12 md:py-16 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
@@ -24,7 +24,7 @@ const About = () => {
           <div className="relative order-first md:order-last">
             <div className="bg-gradient-to-br from-blue-100 to-teal-100 rounded-2xl p-6 md:p-8 shadow-xl">
               <img
-                src="/placeholder.svg"
+                src="/lovable-uploads/06624105-b52b-4aaa-bf6e-1d01a6723894.png"
                 alt="Girish Najwani - Data Engineer"
                 className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-xl shadow-lg"
               />

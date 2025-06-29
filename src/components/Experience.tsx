@@ -81,8 +81,8 @@ const Experience = () => {
                   <ul className="space-y-2 mb-4">
                     {experience.description.map((item, itemIndex) => (
                       <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
-                        <span className="text-blue-600 mr-2 mt-2">•</span>
-                        <span>{item}</span>
+                        <span className="text-blue-600 mr-2 flex-shrink-0 leading-6">•</span>
+                        <span className="leading-6">{item}</span>
                       </li>
                     ))}
                   </ul>

@@ -13,44 +13,43 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="flex flex-col items-center space-y-4 group">
-              <div className="bg-blue-600 p-4 rounded-lg group-hover:bg-blue-700 transition-colors">
-                <Mail className="w-8 h-8" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="flex flex-col items-center space-y-3 group">
+              <div className="bg-blue-600 p-3 rounded-lg group-hover:bg-blue-700 transition-colors">
+                <Mail className="w-6 h-6" />
               </div>
               <div className="text-center">
                 <p className="text-gray-300 text-sm">Email</p>
-                <a href="mailto:your.email@example.com" className="text-white hover:text-blue-400 transition-colors text-lg">
+                <a href="mailto:your.email@example.com" className="text-white hover:text-blue-400 transition-colors text-base">
                   your.email@example.com
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-col items-center space-y-4 group">
-              <div className="bg-teal-600 p-4 rounded-lg group-hover:bg-teal-700 transition-colors">
-                <Phone className="w-8 h-8" />
+            <div className="flex flex-col items-center space-y-3 group">
+              <div className="bg-teal-600 p-3 rounded-lg group-hover:bg-teal-700 transition-colors">
+                <Phone className="w-6 h-6" />
               </div>
               <div className="text-center">
                 <p className="text-gray-300 text-sm">Phone</p>
-                <a href="tel:+1234567890" className="text-white hover:text-teal-400 transition-colors text-lg">
+                <a href="tel:+1234567890" className="text-white hover:text-teal-400 transition-colors text-base">
                   +1 (234) 567-8900
                 </a>
               </div>
             </div>
 
-            <div className="flex flex-col items-center space-y-4 group">
-              <div className="bg-purple-600 p-4 rounded-lg group-hover:bg-purple-700 transition-colors">
-                <MapPin className="w-8 h-8" />
+            <div className="flex flex-col items-center space-y-3 group">
+              <div className="bg-purple-600 p-3 rounded-lg group-hover:bg-purple-700 transition-colors">
+                <MapPin className="w-6 h-6" />
               </div>
               <div className="text-center">
                 <p className="text-gray-300 text-sm">Location</p>
-                <p className="text-white text-lg">Pune, India</p>
+                <p className="text-white text-base">Pune, India</p>
               </div>
             </div>
           </div>
 
           <div className="text-center">
-            <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
             <div className="flex justify-center space-x-4">
               <a
                 href="#"
