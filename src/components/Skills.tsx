@@ -37,9 +37,6 @@ const Skills = () => {
             Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-teal-400 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A comprehensive toolkit for modern data engineering challenges
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

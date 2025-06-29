@@ -43,9 +43,6 @@ const Experience = () => {
             Professional Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A journey of growth in data engineering at ZS Associates
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">

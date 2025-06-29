@@ -1,6 +1,4 @@
 
-import { User, MapPin, Mail, Calendar } from 'lucide-react';
-
 const About = () => {
   return (
     <section id="about" className="py-16 md:py-20 bg-white">
@@ -14,10 +12,6 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-              Hi, I'm Girish Najwani
-            </h3>
-            
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
               Certified Data Engineer with 4 years of experience building and optimizing 
               scalable data pipelines using PySpark, Spark SQL, and distributed computing. 
@@ -25,25 +19,6 @@ const About = () => {
               Azure. Proven track record of delivering high-quality, production-ready data solutions 
               in cross-functional environments.
             </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
-              <div className="flex items-center space-x-3">
-                <User className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-gray-700 text-sm md:text-base">Data Engineer</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-gray-700 text-sm md:text-base">Pune, India</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-gray-700 text-sm md:text-base">Available</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Calendar className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                <span className="text-gray-700 text-sm md:text-base">4+ Years Exp</span>
-              </div>
-            </div>
           </div>
 
           <div className="relative order-first md:order-last">
