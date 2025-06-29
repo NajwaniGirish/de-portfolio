@@ -11,9 +11,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen lg:min-h-screen md:min-h-[80vh] sm:min-h-[70vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen lg:min-h-screen md:min-h-[80vh] sm:min-h-[70vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 text-white flex items-center justify-center relative overflow-hidden">
       {/* Background decoration with lower z-index */}
-      <div className="absolute inset-0 opacity-5 z-0">
+      <div className="absolute inset-0 opacity-3 z-0">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-64 md:h-64 bg-blue-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-40 h-40 md:w-80 md:h-80 bg-teal-500 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-96 md:h-96 bg-purple-500 rounded-full blur-3xl"></div>
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             
             <div className="mb-6">
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-2">Hi all, I'm</p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-2">Hi all, I'm</p>
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
                 <span>Girish Najwani</span>
                 <span className="text-4xl md:text-6xl animate-[wave_1s_ease-in-out_infinite]">👋</span>
@@ -37,8 +37,7 @@ const Hero = () => {
             </div>
             
             <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              A passionate Data Engineer 🚀 having 4 years of experience building and optimizing 
-              scalable data pipelines using PySpark, Spark SQL, and distributed computing on AWS and Azure platforms.
+              Big Data Engineer with 4+ years of experience building large-scale data pipelines and ETL processes. Proficient in Python, SQL, PySpark, Databricks, and Airflow, delivering multi-terabyte, scalable big data solutions for leading pharmaceutical companies.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-6 md:mb-8">
@@ -56,13 +55,17 @@ const Hero = () => {
             {/* Social Icons */}
             <div className="flex justify-center lg:justify-start space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/najwanigirish/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-blue-600 p-3 rounded-lg transition-all duration-300 hover:scale-105"
               >
                 <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
               </a>
               <a
-                href="#"
+                href="https://github.com/NajwaniGirish"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-gray-800 p-3 rounded-lg transition-all duration-300 hover:scale-105"
               >
                 <Github className="w-5 h-5 md:w-6 md:h-6" />

@@ -4,7 +4,7 @@ import { Building, Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Engineer (BTS Associate Consultant)",
+      title: "Senior Data Engineer",
       company: "ZS Associates",
       location: "Pune, India",
       period: "June 2024 - Present",
@@ -19,7 +19,7 @@ const Experience = () => {
       technologies: ["PySpark", "Azure DevOps", "Data Pipelines", "Team Leadership", "Client Management"]
     },
     {
-      title: "Business Technology Associate",
+      title: "Data Engineer",
       company: "ZS Associates",
       location: "Pune, India",
       period: "June 2021 - May 2024",
@@ -36,10 +36,10 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Professional Experience
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 mx-auto mb-6"></div>
@@ -53,15 +53,15 @@ const Experience = () => {
             {experiences.map((experience, index) => (
               <div key={experience.title} className="relative mb-12 last:mb-0">
                 {/* Timeline dot */}
-                <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full border-4 border-white dark:border-slate-800 shadow-lg"></div>
 
-                <div className="ml-20 bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="ml-20 bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-800 mb-1">
+                      <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">
                         {experience.title}
                       </h3>
-                      <div className="flex items-center space-x-4 text-gray-600">
+                      <div className="flex items-center space-x-4 text-gray-600 dark:text-gray-300">
                         <div className="flex items-center space-x-1">
                           <Building size={16} />
                           <span className="font-medium">{experience.company}</span>
@@ -80,8 +80,8 @@ const Experience = () => {
 
                   <ul className="space-y-2 mb-4">
                     {experience.description.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-gray-600 leading-relaxed flex items-start">
-                        <span className="text-blue-600 mr-2 flex-shrink-0 leading-6">•</span>
+                      <li key={itemIndex} className="text-gray-600 dark:text-gray-300 leading-relaxed flex items-start">
+                        <span className="text-blue-600 mr-2 flex-shrink-0 mt-1.5 text-xs">•</span>
                         <span className="leading-6">{item}</span>
                       </li>
                     ))}
@@ -91,7 +91,7 @@ const Experience = () => {
                     {experience.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
