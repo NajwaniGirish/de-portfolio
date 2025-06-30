@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10 flex items-center min-h-screen">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center w-full">
-          <div className="text-center lg:text-left animate-fade-in">
+          <div className="text-center lg:text-left animate-fade-in pt-16 md:pt-20 lg:pt-0">
             <div className="flex justify-center lg:justify-start space-x-4 mb-6 md:mb-8 opacity-20">
               <Database className="w-8 h-8 md:w-12 md:h-12 text-blue-400 animate-pulse" />
               <BarChart3 className="w-8 h-8 md:w-12 md:h-12 text-teal-400 animate-pulse" />
