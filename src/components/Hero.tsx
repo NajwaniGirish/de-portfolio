@@ -1,4 +1,3 @@
-
 import { ChevronDown, Database, BarChart3, Code2, Linkedin, Github } from 'lucide-react';
 
 const Hero = () => {
@@ -28,7 +27,7 @@ const Hero = () => {
               <Code2 className="w-8 h-8 md:w-12 md:h-12 text-purple-400 animate-pulse" />
             </div>
             
-            <div className="mb-6">
+            <div className="mb-3 md:mb-4 lg:mb-6">
               <p className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-2">Hi all, I'm</p>
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text text-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4">
                 <span>Girish Najwani</span>
