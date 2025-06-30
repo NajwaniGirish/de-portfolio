@@ -1,12 +1,11 @@
 
-import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Award, ExternalLink } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
     {
       title: "Databricks Certified Data Engineer Associate",
       issuer: "Databricks",
-      date: "2024",
       credentialId: "152684310",
       verifyUrl: "https://credentials.databricks.com/16454751-0463-4f4c-bd30-c696ecb91c94#acc.8wjRDkZb"
     }
@@ -36,10 +35,6 @@ const Certifications = () => {
                         {cert.title}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 font-medium">{cert.issuer}</p>
-                    </div>
-                    <div className="flex items-center space-x-1 text-blue-600 font-medium">
-                      <Calendar size={16} />
-                      <span>{cert.date}</span>
                     </div>
                   </div>
                   

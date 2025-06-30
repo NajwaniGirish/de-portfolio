@@ -1,10 +1,10 @@
 
-import { ExternalLink, Github, Database, BarChart3 } from 'lucide-react';
+import { BarChart3 } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Kaggle Case Studies",
+      title: "Case Studies",
       description: "Worked on 10+ case studies on Kaggle, covering diverse industries. The projects involved Exploratory Data Analysis (EDA), univariate and bivariate analysis, and hypothesis testing to extract meaningful insights and drive data-driven decision-making.",
       technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "EDA", "Statistical Analysis"],
       icon: <BarChart3 className="w-6 h-6" />,
@@ -55,24 +55,13 @@ const Projects = () => {
                 ))}
               </div>
               
-              <div className="space-y-2 mb-6">
+              <div className="space-y-2">
                 {project.metrics.map((metric, metricIndex) => (
                   <div key={metricIndex} className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-300 text-sm">{metric}</span>
                   </div>
                 ))}
-              </div>
-              
-              <div className="flex space-x-3">
-                <button className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors">
-                  <ExternalLink size={16} />
-                  <span className="text-sm">View on Kaggle</span>
-                </button>
-                <button className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
-                  <Github size={16} />
-                  <span className="text-sm">Code</span>
-                </button>
               </div>
             </div>
           ))}
