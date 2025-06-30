@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen lg:min-h-screen md:min-h-[80vh] sm:min-h-[70vh] bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 text-white flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen lg:min-h-screen md:min-h-screen sm:min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 text-white flex items-center justify-center relative overflow-hidden">
       {/* Subtle background decoration with very low opacity */}
       <div className="absolute inset-0 opacity-5 z-0">
         <div className="absolute top-20 left-20 w-16 h-16 md:w-32 md:h-32 bg-blue-500 rounded-full blur-2xl"></div>
@@ -19,8 +19,8 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 md:w-48 md:h-48 bg-purple-500 rounded-full blur-2xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="container mx-auto px-6 relative z-10 flex items-center min-h-screen">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           <div className="text-center lg:text-left animate-fade-in">
             <div className="flex justify-center lg:justify-start space-x-4 mb-6 md:mb-8 opacity-20">
               <Database className="w-8 h-8 md:w-12 md:h-12 text-blue-400 animate-pulse" />
