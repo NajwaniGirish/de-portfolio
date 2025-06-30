@@ -8,8 +8,7 @@ const Education = () => {
       institution: "Northern India Engineering College GGSIPU University",
       location: "Delhi, India",
       period: "June 2018 - Jun 2021",
-      grade: "CGPA: 8.51/10",
-      description: "Specialized in Information Technology with focus on programming, data structures, algorithms, and software development principles."
+      grade: "CGPA: 8.51/10"
     }
   ];
 
@@ -47,7 +46,6 @@ const Education = () => {
                       <span>{edu.period}</span>
                     </div>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-300 mb-3">{edu.description}</p>
                   <span className="inline-block bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium">
                     {edu.grade}
                   </span>

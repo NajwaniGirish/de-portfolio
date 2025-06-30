@@ -7,9 +7,8 @@ const Certifications = () => {
       title: "Databricks Certified Data Engineer Associate",
       issuer: "Databricks",
       date: "2024",
-      credentialId: "DBX123ABC",
-      description: "Certified in designing and implementing data engineering solutions using Databricks platform, including Apache Spark, Delta Lake, and data pipeline optimization.",
-      skills: ["Apache Spark", "Databricks", "Delta Lake", "Data Engineering"]
+      credentialId: "152684310",
+      verifyUrl: "https://credentials.databricks.com/16454751-0463-4f4c-bd30-c696ecb91c94#acc.8wjRDkZb"
     }
   ];
 
@@ -44,29 +43,19 @@ const Certifications = () => {
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                    {cert.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {cert.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                  
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500 dark:text-gray-400">
                       Credential ID: {cert.credentialId}
                     </span>
-                    <button className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 transition-colors">
+                    <a 
+                      href={cert.verifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 transition-colors"
+                    >
                       <span>Verify</span>
                       <ExternalLink size={16} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
